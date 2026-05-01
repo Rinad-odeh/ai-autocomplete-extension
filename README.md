@@ -12,14 +12,6 @@ A Chrome Extension (Manifest V3) that shows inline ghost-text suggestions while 
 - **Anti-repeat filter** — suppresses low-quality or repetitive completions
 - **Multiple AI providers** supported
 
-## Providers
-
-| Provider | Cost | Speed | Setup |
-|----------|------|-------|-------|
-| Mock | Free | Instant | None |
-| Groq | Free tier available | Very fast | API key from console.groq.com |
-| OpenAI | Paid | Fast | API key from platform.openai.com |
-| Local Ollama | Free | Depends on hardware | Install ollama.com |
 
 ## Quick Start
 
