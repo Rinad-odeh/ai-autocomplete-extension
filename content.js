@@ -231,7 +231,7 @@ function normalizeForDisplay(context, raw) {
   if (!isMultiLine) {
     text = text.split("\n")[0];
   } else {
-    // Limit to 2 lines max for ghost readability
+
     text = text.split("\n").slice(0, 2).join("\n");
   }
 
