@@ -61,11 +61,6 @@ A Chrome Extension (Manifest V3) that shows inline ghost-text suggestions while 
 3. `Tab` → accept full suggestion
 4. `Esc` or arrow keys → dismiss
 
-## Known Limitations
-
-- `file://` pages require enabling **Allow access to file URLs** in Chrome extension settings
-- For local testing, use `python -m http.server 8080` and open `http://localhost:8080/your-file.html`
-- Gmail and rich-text editors use `contenteditable` — supported but positioning may vary slightly
 
 ## Security
 
