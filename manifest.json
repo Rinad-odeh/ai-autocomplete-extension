@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Local AI Autocomplete",
+  "description": "Inline AI autocomplete for text fields on any website. Accept suggestions with Tab.",
+  "version": "1.1.0",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_title": "AI Autocomplete Settings"
+  }
+}
